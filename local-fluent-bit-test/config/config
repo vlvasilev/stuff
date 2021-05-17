@@ -1,0 +1,26 @@
+[SERVICE]
+    Flush           30
+    Daemon          Off
+    Log_Level       debug
+    Parsers_File    parsers/config
+    HTTP_Server     On
+    HTTP_Listen     0.0.0.0
+    HTTP_PORT       2020
+
+[INPUT]
+    Name              tail
+    Tag               test.*
+    Path              input/*.log
+    Parser            docker
+    DB                database/flb_kube.db
+    DB.Sync           full
+    read_from_head    true
+    Skip_Long_Lines   On
+    Mem_Buf_Limit     30MB
+    Refresh_Interval  10
+    Ignore_Older      1800s
+
+[OUTPUT]
+    Name file
+    Match *
+    Path output/

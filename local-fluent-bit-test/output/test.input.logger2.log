@@ -1,0 +1,7 @@
+test.input.logger2.log: [1608721329.223832987, {"log":"I1119 17:32:09.221490       7 logs_generator.go:67] 2 PUT /api/v1/namespaces/ns/pods/8kk 500\n","stream":"stderr","time":"2020-12-23T11:02:09.223832987Z"}]
+test.input.logger2.log: [1608721329.223832987, {"log":"I1119 17:32:09.221490       7 logs_generator.go:67] 1 PUT /api/v1/namespaces/ns/pods/8kk 500\n","stream":"stderr","time":"2020-12-23T11:02:09.223832987Z"}]
+test.input.logger2.log: [1608721329.223832987, {"log":"I1119 17:32:09.221490       7 logs_generator.go:67] 2 PUT /api/v1/namespaces/ns/pods/8kk 500\n","stream":"stderr","time":"2020-12-23T11:02:09.223832987Z"}]
+test.input.logger2.log: [1608721329.223832987, {"log":"I1119 17:32:09.221490       7 logs_generator.go:67] 3 PUT /api/v1/namespaces/ns/pods/8kk 500\n","stream":"stderr","time":"2020-12-23T11:02:09.223832987Z"}]
+test.input.logger2.log: [1608721329.223832987, {"log":"I1119 17:32:09.221490       7 logs_generator.go:67] 2 PUT /api/v1/namespaces/ns/pods/8kk 500\n","stream":"stderr","time":"2020-12-23T11:02:09.223832987Z"}]
+test.input.logger2.log: [1608721329.223832987, {"log":"I1119 17:32:09.221490       7 logs_generator.go:67] 2 PUT /api/v1/namespaces/ns/pods/8kk 500\n","stream":"stderr","time":"2020-12-23T11:02:09.223832987Z"}]
+test.input.logger2.log: [1608721329.223832987, {"log":"I1119 17:32:09.221490       7 logs_generator.go:67] 2 PUT /api/v1/namespaces/ns/pods/8kk 500\n","stream":"stderr","time":"2020-12-23T11:02:09.223832987Z"}]
