@@ -1,0 +1,19 @@
+structure:
+- nodesSelector:
+    path: https://github.com/gardener/machine-controller-manager/tree/master/docs
+links:
+  rewrites:
+  # In this case the referenced .md resources from the nodeSelector are with relative paths but this links.rewrites.
+  # It looks that docforge first translates the references with their absolute path and if a links.rewrites section is
+  # matching those paths then the are rewritted. In this case "/development/local-setup.md" will translated as 
+  # github.com/gardener/machine-controller-manager/blob/master/docs/... and then to  
+  # github.com/gardener/machine-controller-manager/blob/v0.39.0/docs/....
+  # If the this section was missing then the refferreced path will stay relative.
+  # If a relative ot absolute path is resolved to .../machine-controller-manager/pull/...
+  # Then they will stay as relative ones.
+    github.com/gardener/machine-controller-manager/(blob|tree|raw):
+      version: v0.36.0
+  # Mapping a regular expression to nil effectively removes matching links
+  # from their documents. In ".../proposals/excess_reserve_capacity.md" the link https://github.com/gardener/gardener/issues/254
+  # on line 27 will be removed. !!! This does not work
+    gardener/gardener/(pulls|pull|issue|issues): ~

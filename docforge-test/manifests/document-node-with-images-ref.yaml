@@ -1,0 +1,5 @@
+structure:
+# This node is simple document one which will download the README.md file as usage.md in the upper root level.
+# The images referred in this document are not downloaded? Because is not intended a Links.downloads section must be provided.
+- name: usage
+  source: https://github.com/gardener/logging/blob/master/docs/usage/README.md

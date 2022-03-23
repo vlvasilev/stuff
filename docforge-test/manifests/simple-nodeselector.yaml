@@ -1,0 +1,8 @@
+# Here the .md files in the "docs" github folder will be downloaded in the same order and file/folder tree. 
+# Because we have specified "..tree/master/docs" instead "..blob/master/docs" 
+# all references from one node to other stay as absolute path.
+nodesSelector:
+  path: https://github.com/gardener/machine-controller-manager/tree/master/docs
+
+# Here if there is a README.md inside "path" the name of the file is persisted where as using document node without "name"
+# the file name gets rewritten from README.md to _index.md 

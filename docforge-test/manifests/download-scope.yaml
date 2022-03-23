@@ -1,0 +1,24 @@
+structure:
+# This node is simple document one which will download the README.md file as usage.md in the upper root level.
+# The images referred in this document are not downloaded? Because is not intended a Links.downloads section must be provided.
+- name: usage
+  source: https://github.com/gardener/logging/blob/master/docs/usage/README.md
+links:
+# Here download scope will download all resources and md files from "gardener/logging/(blob|raw)/master/docs" referenced by any node.
+# The downloaded resources are stored in a _resource directory at the same root level where the .md file is. 
+  downloads:
+    scope:
+      gardener/logging/(blob|raw)/master/docs: ~
+
+# The scope entry in this example is a mapping between a regular expression matching the absolute form of the links in the document 
+# nodes content in the bundle and the default rule for the downloaded resource names. the regular expression will match all referenced 
+# esources form the gardener organization and repository that are of type blob and raw. To download only raster images, 
+# the following expression might be of use: "\\.(jpg|gif|png)". 
+# Or a combination of the two to have only images from the gardener repository downloaded. you can specify as many scope entries as you need.
+
+# The rule mapped to the regular expression of this example is nil (~), which defaults to a naming pattern that changes the name 
+# to a unique UUID string and preserves the extension. That could be changed by providing a naming pattern using 
+# the $name (original resource name), $uuid (generated UUID) and $ext (original resource extension) variables.
+
+# Note that links can be defined both globally and on a node with a cascading override behavior where the more local takes precedence. 
+# Use this advantage to define global download settings and node-specific ones only where necessary.

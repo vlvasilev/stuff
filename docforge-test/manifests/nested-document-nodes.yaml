@@ -1,0 +1,15 @@
+structure:
+# This node is simple document one which will download the README.md file as overview.md in the upper root level
+- name: overview
+  source: https://github.com/gardener/logging/blob/master/README.md 
+- name: usage
+# This node is container which will stores its descendants under folder "usage"
+  nodes:
+# This node is simple document one and since the name setting is omitted, the will be README.md(but in fact is _index.md. Why ????)
+# Here the images URLs remain as full path, so they are not downloaded.
+  - source: https://github.com/gardener/logging/blob/master/docs/usage/README.md
+
+# docforge-docs
+# ├── usage
+# │   └── _index.md
+# └── overview.md

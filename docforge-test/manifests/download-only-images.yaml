@@ -1,0 +1,13 @@
+structure:
+# This node is simple document one which will download the README.md file as usage.md in the upper root level.
+# The images referred in this document are not downloaded? Because is not intended a Links.downloads section must be provided.
+- name: usage
+  source: https://github.com/gardener/logging/blob/master/docs/usage/README.md
+links:
+# Here download scope will download all resources and md files from "gardener/logging/(blob|raw)/master/docs" referenced by any node.
+# The downloaded resources are stored in a _resource directory at the same root level where the .md file is. 
+  downloads:
+    scope:
+      gardener/logging/(blob|raw)/master/docs: ~
+      # Here we download only images from ../master/docs
+        "\\.(jpg|gif|png)": "$name-image-$uuid.$ext"

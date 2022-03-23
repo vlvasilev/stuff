@@ -1,0 +1,162 @@
+structure:
+    - name: blog
+      nodes:
+        - name: 2018_week_27
+          nodes:
+            - name: _index.md
+              source: https://github.com/gardener/documentation/blob/master/website/blog/2018_week_27/_index.md
+        - name: 2018_week_06
+          nodes:
+            - name: _index.md
+              source: https://github.com/gardener/documentation/blob/master/website/blog/2018_week_06/_index.md
+        - name: 2018_week_50
+          nodes:
+            - name: _index.md
+              source: https://github.com/gardener/documentation/blob/master/website/blog/2018_week_50/_index.md
+        - name: 2020-09
+          nodes:
+            - name: _index.md
+              source: https://github.com/gardener/documentation/blob/master/website/blog/2020-09/_index.md
+        - name: 2019_week_06
+          nodes:
+            - name: _index.md
+              source: https://github.com/gardener/documentation/blob/master/website/blog/2019_week_06/_index.md
+        - name: _index.md
+          source: https://github.com/gardener/documentation/blob/master/website/blog/_index.md
+        - name: 2019_week_02
+          nodes:
+            - name: _index.md
+              source: https://github.com/gardener/documentation/blob/master/website/blog/2019_week_02/_index.md
+        - name: 2018_week_46
+          nodes:
+            - name: _index.md
+              source: https://github.com/gardener/documentation/blob/master/website/blog/2018_week_46/_index.md
+        - name: 2018_week_51
+          nodes:
+            - name: _index.md
+              source: https://github.com/gardener/documentation/blob/master/website/blog/2018_week_51/_index.md
+        - name: 2020-08
+          nodes:
+            - name: "00"
+              nodes:
+                - name: _index.md
+                  source: https://github.com/gardener/documentation/blob/master/website/blog/2020-08/00/_index.md
+        - name: 2020-10
+          nodes:
+            - name: "00"
+              nodes:
+                - name: _index.md
+                  source: https://github.com/gardener/documentation/blob/master/website/blog/2020-10/00/_index.md
+            - name: "01"
+              nodes:
+                - name: _index.md
+                  source: https://github.com/gardener/documentation/blob/master/website/blog/2020-10/01/_index.md
+        - name: 2018_week_22
+          nodes:
+            - name: _index.md
+              source: https://github.com/gardener/documentation/blob/master/website/blog/2018_week_22/_index.md
+        - name: 2018_week_09
+          nodes:
+            - name: _index.md
+              source: https://github.com/gardener/documentation/blob/master/website/blog/2018_week_09/_index.md
+        - name: 2018_week_08_2
+          nodes:
+            - name: _index.md
+              source: https://github.com/gardener/documentation/blob/master/website/blog/2018_week_08_2/_index.md
+        - name: 2020-12
+          nodes:
+            - name: "00"
+              nodes:
+                - name: _index.md
+                  source: https://github.com/gardener/documentation/blob/master/website/blog/2020-12/00/_index.md
+        - name: 2018_week_10
+          nodes:
+            - name: _index.md
+              source: https://github.com/gardener/documentation/blob/master/website/blog/2018_week_10/_index.md
+        - name: 2021-01
+          nodes:
+            - name: "00"
+              nodes:
+                - name: _index.md
+                  source: https://github.com/gardener/documentation/blob/master/website/blog/2021-01/00/_index.md
+            - name: "01"
+              nodes:
+                - name: _index.md
+                  source: https://github.com/gardener/documentation/blob/master/website/blog/2021-01/01/_index.md
+        - name: 2019_week_21
+          nodes:
+            - name: _index.md
+              source: https://github.com/gardener/documentation/blob/master/website/blog/2019_week_21/_index.md
+            - name: _index.md
+              source: https://github.com/gardener/documentation/blob/master/website/blog/2019_week_21_2/_index.md
+        - name: 2019_week_21_2
+          nodes:
+            - name: _index.md
+              source: https://github.com/gardener/documentation/blob/master/website/blog/2019_week_21_2/_index.md
+        - name: 2018_week_40
+          nodes:
+            - name: _index.md
+              source: https://github.com/gardener/documentation/blob/master/website/blog/2018_week_40/_index.md
+        - name: 2020-05
+          nodes:
+            - name: "00"
+              nodes:
+                - name: _index.md
+                  source: https://github.com/gardener/documentation/blob/master/website/blog/2020-05/00/_index.md
+        - name: 2018_week_07
+          nodes:
+            - name: _index.md
+              source: https://github.com/gardener/documentation/blob/master/website/blog/2018_week_07/_index.md
+        - name: 2018_week_17
+          nodes:
+            - name: _index.md
+              source: https://github.com/gardener/documentation/blob/master/website/blog/2018_week_17/_index.md
+        - name: 2020_week_20
+          nodes:
+            - name: 00.md
+              source: https://github.com/gardener/documentation/blob/master/website/blog/2020_week_20/00.md
+        - name: 2020-11
+          nodes:
+            - name: "02"
+              nodes:
+                - name: _index.md
+                  source: https://github.com/gardener/documentation/blob/master/website/blog/2020-11/02/_index.md
+            - name: "00"
+              nodes:
+                - name: _index.md
+                  source: https://github.com/gardener/documentation/blob/master/website/blog/2020-11/00/_index.md
+            - name: "01"
+              nodes:
+                - name: _index.md
+                  source: https://github.com/gardener/documentation/blob/master/website/blog/2020-11/01/_index.md
+        - name: 2018_week_08
+          nodes:
+            - name: _index.md
+              source: https://github.com/gardener/documentation/blob/master/website/blog/2018_week_08/_index.md
+            - name: _index.md
+              source: https://github.com/gardener/documentation/blob/master/website/blog/2018_week_08_2/_index.md
+      properties:
+        frontmatter:
+            aggregate: true
+            layout: blog-list
+            title: Blogs
+            type: blog
+        index: true
+    - name: adopter
+      nodes:
+        - name: _index
+          source: https://github.com/gardener/documentation/blob/master/website/adopter/_index.md
+          properties:
+            frontmatter:
+                title: Adopters
+                type: landingpage
+                url: /adopter
+    - name: community
+      nodes:
+        - name: _index
+          source: https://github.com/gardener/documentation/blob/master/website/community/_index.md
+          properties:
+            title: Community
+            type: landingpage
+            url: /community
+

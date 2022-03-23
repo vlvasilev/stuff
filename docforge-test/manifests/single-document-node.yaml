@@ -1,0 +1,4 @@
+structure:
+# This node is simple document one which will download the README.md file as overview.md in the upper root level
+- name: overview
+  source: https://github.com/gardener/logging/blob/master/README.md 
