@@ -1,0 +1,33 @@
+[FILTER]
+    Name                parser
+    Match               test.input.*
+    Key_Name            log
+    Parser              event
+    Reserve_Data        True
+
+[PARSER]
+    Name        docker
+    Format      json
+    Time_Key    time
+    Time_Format %Y-%m-%dT%H:%M:%S.%L%z
+    Time_Keep   On
+    # Command      |  Decoder | Field | Optional Action
+    # =============|==================|=================
+    Decode_Field_As   escaped    log
+
+[PARSER]
+    Name        event
+    Format      json
+    Time_Key    ts
+    Time_Format %Y-%m-%dT%H:%M:%S
+    # Command      |  Decoder | Field | Optional Action
+    # =============|==================|=================
+    Decode_Field_As   escaped   log      do_next
+    Decode_Field_As   json      log      do_next
+
+{"log":"{\"origin\":\"Seed\",\"type\":\"Normal\",\"firstTimestamp\":null,\"lastTimestamp\":null,\"reason\":\"Scheduled\",\"object\":\"Pod/prometheus-0\",\"_entry\":\"Successfully assigned shoot--330716--330716-aws/prometheus-0 to ip-10-250-17-42.eu-west-1.compute.internal\"}\n","stream":"stdout","time":"2022-06-17T16:48:45.31242206Z"}
+{"origin":"Seed","type":"Normal","firstTimestamp":null,"lastTimestamp":null,"reason":"Scheduled","object":"Pod/prometheus-0","_entry":"Successfully assigned shoot--330716--330716-aws/prometheus-0 to ip-10-250-17-42.eu-west-1.compute.internal","stream":"stdout","time":"2022-06-17T16:48:45.31242206Z"}]
+
+
+{"log":"{\"origin\":\"Seed\",\"type\":\"Normal\",\"count\":1,\"firstTimestamp\":\"2022-06-17T16:43:54Z\",\"lastTimestamp\":\"2022-06-17T16:43:54Z\",\"reason\":\"SuccessfulAttachVolume\",\"object\":\"Pod/prometheus-0\",\"_entry\":\"AttachVolume.Attach succeeded for volume \\\"pv-shoot--i330716--seed-aws-85f4c194-4a87-4852-b217-5788c61c68b9\\\" \",\"source\":\"attachdetach-controller\"}\n","stream":"stdout","time":"2022-06-17T16:48:45.312428122Z"}
+{"log":"{\"origin\":\"Seed\",\"type\":\"Normal\",\"count\":1,\"firstTimestamp\":\"2022-06-17T16:43:54Z\",\"lastTimestamp\":\"2022-06-17T16:43:54Z\",\"reason\":\"SuccessfulAttachVolume\",\"object\":\"Pod/prometheus-0\",\"_entry\":\"AttachVolume.Attach succeeded for volume \"pv-shoot--i330716--seed-aws-85f4c194-4a87-4852-b217-5788c61c68b9\" \",\"source\":\"attachdetach-controller\"}\n","stream":"stdout","time":"2022-06-17T16:48:45.312428122Z"}
