@@ -18,7 +18,14 @@
     Skip_Long_Lines   On
     Mem_Buf_Limit     30MB
     Refresh_Interval  10
-    Ignore_Older      1800s
+    Ignore_Older      7200s
+
+[FILTER]
+    Name                parser
+    Match               *
+    Key_Name            log
+    Parser              event
+    Reserve_Data        True
 
 [OUTPUT]
     Name file
